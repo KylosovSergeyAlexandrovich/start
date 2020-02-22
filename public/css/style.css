@@ -1,8 +1,23 @@
-.asd {
-    color: wheat;
-    background-color:darkblue;
-}
+
 
 html {
     background: black;
+}
+
+.title {
+    color: wheat;
+    text-align: center;
+    margin: 200px 0 100px 0;
+}
+.block-lucky {
+    border: 1px dashed red;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+.text {
+    color: wheat;
+}
+.number {
+    color: wheat;
 }
