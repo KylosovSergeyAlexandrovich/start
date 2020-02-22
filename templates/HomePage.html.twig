@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
-</head>
-<body>
+
+{% extends 'index.html.twig' %}
+{% set title = 'WEDLS' %}
+{% set keywords = 'Keywords' %}
+{% set description = 'Description' %}
+{% set h1 = title %}
+{% set breadcrumb = title %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block keywords %}{{ keywords }}{% endblock %}
+
+{% block description %}{{ description }}{% endblock %}
+
+{# на бдуюущее   #}
+{% block h1 %}{{ h1 }}{% endblock %}
+
+{% block breadcrumb %}{{ breadcrumb }}{% endblock %}
 
 
-
-<h1>Your lucky number is {{ number }}</h1>
-
+{% block content %}
 
 
-
-{% block body %}{% endblock %}
-{% block javascripts %}{% endblock %}
+    <h1 class="asd">Your lucky number is {{ number }}</h1>
 
 
-
-
-
-</body>
-</html>
+{% endblock %}
