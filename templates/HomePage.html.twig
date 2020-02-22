@@ -25,6 +25,19 @@
     <div class="block-lucky">
         <h4 class="text">Your lucky number </h4>
         <h2 class="number"> {{ number }}</h2>
+
+
+        {% if auth == 'on' %}
+            <p class="text">1</p>
+
+        {% else %}
+            <p class="text">0</p>
+        {% endif %}
     </div>
+
+
+
+
+
 
 {% endblock %}
