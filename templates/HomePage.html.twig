@@ -27,12 +27,23 @@
         <h2 class="number"> {{ number }}</h2>
 
 
-        {% if auth == 'on' %}
-            <p class="text">1</p>
+        {#{% if auth == 'on' %}#}
+            {#<p class="text" id="qwe">1</p>#}
 
-        {% else %}
-            <p class="text">0</p>
-        {% endif %}
+        {#{% else %}#}
+            {#<p class="text" id="qwe">0</p>#}
+        {#{% endif %}#}
+
+
+
+
+
+        <div content="auth">
+            <p><input type="button"  value="авторизация" id="in" ></p>
+            <p> <input type="button"  value="выход" id="of"></p>
+        </div>
+
+
     </div>
 
 
@@ -40,4 +51,9 @@
 
 
 
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{ asset('javascript/home/home.js') }}"></script>
 {% endblock %}
